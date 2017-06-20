@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyApp02" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="s01" translatesAutoresizingMaskIntoConstraints="NO" id="5IP-Kw-4IN">
+                                <rect key="frame" x="46" y="166" width="282" height="334"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ai-RP-KTP">
+                                <rect key="frame" x="172" y="118" width="31" height="30"/>
+                                <state key="normal" title="擲筊"/>
+                                <connections>
+                                    <action selector="pressBtn:" destination="BYZ-38-t0r" eventType="touchDown" id="Bpa-J8-z2F"/>
+                                    <action selector="upBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bH5-xI-P87"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4Ai-RP-KTP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.4" id="Ej1-3Q-1g4"/>
+                            <constraint firstItem="5IP-Kw-4IN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Rfo-Wd-o21"/>
+                            <constraint firstItem="4Ai-RP-KTP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aeC-qn-kA5"/>
+                            <constraint firstItem="5IP-Kw-4IN" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.75" id="bXr-Qr-a8A"/>
+                            <constraint firstItem="5IP-Kw-4IN" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="cY6-7g-eZB"/>
+                            <constraint firstItem="5IP-Kw-4IN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pAJ-wS-4pg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imgCup" destination="5IP-Kw-4IN" id="PHB-Br-ZNN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-98.400000000000006" y="122.78860569715144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="s01" width="270" height="271"/>
+    </resources>
+</document>
